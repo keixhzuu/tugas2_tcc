@@ -1,6 +1,7 @@
-**Tugas 2 tcc Aplikasi Notes**
+# Tugas 2 tcc Aplikasi Notes
 
-Struktur Folder
+### Struktur Folder
+```text
 .
 ├── backend/
 │   ├── config/          # Konfigurasi database
