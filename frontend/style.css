@@ -1,0 +1,132 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+
+  /* base color */
+  background-color: #fff0f5;
+
+ 
+  background-image: radial-gradient(#ffc2d1 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #d63384;
+}
+
+/* FORM */
+.form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(214, 51, 132, 0.1);
+}
+
+input, textarea {
+  width: 98%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #f8c8dc;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border-color: #ff85a2;
+}
+
+/* BUTTON UTAMA */
+button {
+  margin-top: 12px;
+  padding: 10px;
+  border: none;
+  background: #ff85a2; /* pink utama */
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover bukan hijau lagi */
+button:hover {
+  background: #ff6f91; /* pink lebih tua */
+  transform: scale(1.05);
+}
+
+/* LIST NOTES */
+.notes {
+  display: grid;
+  gap: 15px;
+}
+
+.note {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 133, 162, 0.15);
+  transition: 0.2s;
+}
+
+.note:hover {
+  transform: translateY(-3px);
+}
+
+/* TEXT */
+.note h3 {
+  margin: 0;
+  color: #d63384;
+}
+
+.note p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.note small {
+  color: #999;
+}
+
+/* ACTION BUTTON */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* EDIT BUTTON (peach / orange soft) */
+.edit {
+  background: #ffd6a5;
+  color: #9c4f00;
+}
+
+.edit:hover {
+  background: #ffc078;
+  transform: scale(1.05);
+}
+
+/* DELETE BUTTON (pink / red soft) */
+.delete {
+  background: #ff8fab;
+  color: white;
+}
+
+.delete:hover {
+  background: #ff6f91;
+  transform: scale(1.05);
+}
+.actions button {
+  flex: 1;
+}
+.note p {
+  margin: 10px 0;
+  color: #555;
+  white-space: pre-line;
+}

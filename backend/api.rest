@@ -1,0 +1,26 @@
+### GET semua notes
+GET http://localhost:3000/notes
+
+
+### POST tambah note
+POST http://localhost:3000/notes
+Content-Type: application/json
+
+{
+  "title": "Catatan pertama",
+  "content": "Ini isi catatan"
+}
+
+
+### PUT edit note
+PUT http://localhost:3000/notes/8
+Content-Type: application/json
+
+{
+  "title": "Update judul",
+  "content": "Update isi"
+}
+
+
+### DELETE note
+DELETE http://localhost:3000/notes/6
