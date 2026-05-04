@@ -23,5 +23,3 @@ CMD ["node", "index.js"]
 
 # CMD ["node", "index.js"]
   # Menentukan perintah yang akan dijalankan ketika container dijalankan. Dalam hal ini, perintah tersebut menjalankan aplikasi Node.js dengan menggunakan file index.js sebagai titik masuk.
-
-langsung pake ini bisa?
