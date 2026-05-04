@@ -3,9 +3,12 @@ env: standard
 instance_class: F1
 
 handlers:
-  # Mengarahkan semua request ke index.html (cocok untuk SPA seperti React/Vue)
-  - url: /.*
-    static_files: build/index.html
-    upload: build/index.html
+  # Mengarahkan root ke index.html
   - url: /
-    static_dir: build
+    static_files: index.html
+    upload: index.html
+
+  # Mengizinkan akses ke semua file statis lainnya (JS, CSS, Gambar)
+  - url: /(.*)
+    static_files: \1
+    upload: (.*)
