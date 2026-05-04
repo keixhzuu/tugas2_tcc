@@ -1,0 +1,24 @@
+### GET semua notes dari Cloud Run
+GET https://notes-be-nia-435877963894.us-central1.run.app/notes
+Accept: application/json
+
+### POST tambah note baru
+POST https://notes-be-nia-435877963894.us-central1.run.app/notes
+Content-Type: application/json
+
+{
+  "title": "Catatan Deploy Cloud",
+  "content": "Berhasil menyimpan melalui Cloud Run dan App Engine"
+}
+
+### PUT edit note (Ganti :id dengan ID yang ada di database)
+PUT https://notes-be-nia-435877963894.us-central1.run.app/notes/7
+Content-Type: application/json
+
+{
+  "title": "Update Judul Produksi",
+  "content": "Isi catatan ini telah diperbarui di lingkungan cloud"
+}
+
+### DELETE note (Ganti :id dengan ID yang ingin dihapus)
+DELETE https://notes-be-nia-435877963894.us-central1.run.app/notes/7
