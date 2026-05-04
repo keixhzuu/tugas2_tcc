@@ -1,11 +1,12 @@
 FROM node:20-alpine
 WORKDIR /app
 
-
-COPY package*.json ./
+# Kita arahkan Docker untuk mengambil package.json dari dalam folder backend
+COPY backend/package*.json ./
 RUN npm install
-COPY . .
 
-EXPOSE 3000
-# Pastikan entry point sesuai nama filemu
+# Kita arahkan Docker untuk mengambil semua kode dari dalam folder backend
+COPY backend/ .
+
+EXPOSE 5000
 CMD ["node", "app.js"]
