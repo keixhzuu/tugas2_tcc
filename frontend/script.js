@@ -1,7 +1,7 @@
 // buat deploy
 // const API = 'http://ip vm/notes';
 // lokal
-const API = 'https://notes-be-nia-435877963894.us-central1.run.app/';
+const API = 'https://notes-be-nia-435877963894.us-central1.run.app/notes';
 
 async function loadNotes() {
   const res = await fetch(API);
