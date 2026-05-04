@@ -1,4 +1,4 @@
-service: notes-nia  # Nama service kamu sekarang jadi notes-nia
+service: notes-nia  
 runtime: nodejs20
 env: standard
 instance_class: F1

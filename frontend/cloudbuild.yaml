@@ -1,6 +1,5 @@
 steps:
   # Step 1: Build Docker Image untuk Frontend
-  # Namanya disesuaikan jadi notes-fe-nia biar rapi
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/$PROJECT_ID/notes-fe-nia', './frontend']
 
