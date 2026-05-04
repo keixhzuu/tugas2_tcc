@@ -8,5 +8,5 @@ RUN npm install
 # Kita arahkan Docker untuk mengambil semua kode dari dalam folder backend
 COPY backend/ .
 
-EXPOSE 5000
+EXPOSE 3000
 CMD ["node", "app.js"]
